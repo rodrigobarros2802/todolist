@@ -8,8 +8,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap');
 
 body {
-    background-image: url(/img/fundo-terra.jpg);
+    background-image: url(/img/fundo-rio.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-principal {
+    background-color: white;
+    width: 460px;
+}
+
+header {
+    text-align: center;
+}
+
+.todo-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
