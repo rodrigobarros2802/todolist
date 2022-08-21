@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
+    font-weight: bold;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap');
@@ -22,10 +23,14 @@ body {
 .container-principal {
     background-color: white;
     width: 460px;
+    border-radius: 10px;
 }
 
 header {
     text-align: center;
+    margin: 20px;
+    font-size: 1.5rem;
+    border-bottom: 1px solid gray;
 }
 
 .todo-form {
