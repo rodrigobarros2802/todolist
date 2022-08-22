@@ -21,6 +21,11 @@ const saveTodo = (text) => {
     const doneBtn = document.createElement("button");
     doneBtn.innerHtml = '<i class="fa-solid fa-check"></i>';
     todo.appendChild("doneBtn");
+
+    //Criando o Botão Editar e colocando botão dentro da variável todo
+    const editBtn = document.createElement("button");
+    editBtn.innerHTML = '<i class="fa-solid fa-pen"></i>';
+    todo.appendChild("editBtn");
 }
 
 
