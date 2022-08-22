@@ -33,8 +33,40 @@ header {
     border-bottom: 1px solid gray;
 }
 
-.todo-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#todo-form {
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#todo-input {
+    width: 250px;
+    height: 30px;
+    text-align: left;
+}
+
+#control-form button {
+    height: 30px;
+    width: 40px;
+    font-size: 16px;
+}
+
+#edit-form {
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#edit-input {
+    width: 250px;
+    height: 30px;
+    text-align: left;
+}
+
+#cancel-edit-btn {
+    height: 30px;
+    width: 100px;
+    margin-top: 20px;
 }
