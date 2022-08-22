@@ -19,18 +19,23 @@ const saveTodo = (text) => {
 
     //Criando o Botão Concluído e colocando botão dentro da variável todo
     const doneBtn = document.createElement("button");
+    doneBtn.classList.add("finish-todo");
     doneBtn.innerHtml = '<i class="fa-solid fa-check"></i>';
     todo.appendChild("doneBtn");
 
     //Criando o Botão Editar e colocando botão dentro da variável todo
     const editBtn = document.createElement("button");
+    editBtn.classList.add("edit-todo");
     editBtn.innerHTML = '<i class="fa-solid fa-pen"></i>';
     todo.appendChild("editBtn");
 
     //Criando o Botão Remove e colocando botão dentro da variável todo 
-    const removeBtn = document.createElement("button");
-    removeBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
-    appendChild("removeBtn");
+    const deleteBtn = document.createElement("button");
+    deleteBtn.classList.add("remove-todo");
+    deleteBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+    appendChild("deleteBtn");
+
+    todoList.appendChild("todo");
 }
 
 
