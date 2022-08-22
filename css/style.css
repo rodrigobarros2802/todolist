@@ -104,3 +104,11 @@ header {
     height: 30px;
     width: 90px;
 }
+
+#todo-list {
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
