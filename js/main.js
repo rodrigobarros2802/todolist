@@ -35,9 +35,13 @@ const saveTodo = (text) => {
     deleteBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
     todo.appendChild(deleteBtn);
 
+    //Adicionando toda função dentro da Todo List
     todoList.appendChild(todo);
-}
 
+    //Limpando input ao inserir tarefa na lista
+    todoInput.value = "";
+    todoInput.focus();
+}
 
 // Eventos
 todoForm.addEventListener("submit", (e) => { //Criando evento submit
