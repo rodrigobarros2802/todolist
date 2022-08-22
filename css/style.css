@@ -56,14 +56,19 @@ header {
     border: 2px solid black;
 }
 
+.hide {
+    display: none;
+}
+
 #edit-form {
-    display: inline-block;
     font-size: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid #ddd;
 }
+
+
 
 #edit-input {
     width: 250px;
@@ -151,8 +156,4 @@ button:hover {
     background-color: #395169;
     color: white;
     transition: .3s;
-}
-
-button:focus {
-
 }
