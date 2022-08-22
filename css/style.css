@@ -20,15 +20,52 @@ body {
     align-items: center;
 }
 
+button {
+    background-color: #fdfdfd;
+    color: #102f5e;
+    border: 2px solid #102f5e;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #102f5e;
+    color: white;
+    transition: .3s;
+}
+
+button:hover > i {
+    color: white;
+}
+
+button i {
+    color: #102f5e;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+input, select {
+    padding: 5px;
+}
+
+.hide {
+    display: none;
+}
+ 
 .container-principal {
     background-color: white;
-    width: 460px;
     border-radius: 10px;
+    width: 460px;
+    margin: 3rem 0 auto;
+    padding: 1.5rem;
 }
 
 header {
     text-align: center;
-    margin: 20px;
     font-size: 1.3rem;
     border-bottom: 1px solid #ddd;
 }
@@ -37,8 +74,7 @@ header {
     display: inline-block;
     font-size: 20px;
     padding-bottom: 20px;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    margin-top: 20px;
     border-bottom: 1px solid #ddd;
 }
 
@@ -52,19 +88,11 @@ header {
     height: 30px;
     width: 40px;
     font-size: 16px;
-    padding: .3rem .6rem;
-    cursor: pointer;
-    border: 2px solid black;
-}
-
-.hide {
-    display: none;
 }
 
 #edit-form {
     font-size: 20px;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    margin-top: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid #ddd;
 }
@@ -79,16 +107,11 @@ header {
     height: 30px;
     width: 100px;
     margin-top: 20px;
-    cursor: pointer;
-    border: 2px solid black;
-    font-weight: bold;
-    padding: .3rem .6rem;
 }
 
 #toolbar {
     display: flex;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    margin-top: 20px;
     padding-bottom: 20px;
     font-size: 20px;
     border-bottom: 1px solid #ddd;
@@ -103,9 +126,6 @@ header {
 #erase-button {
     width: 40px;
     height: 30px;
-    cursor: pointer;
-    border: 2px solid black;
-    padding: .3rem .6rem;
 }
 
 #filter {
@@ -131,7 +151,6 @@ header {
     align-items: center;
     border-bottom: 1px solid #ddd;
     padding: 1rem;
-    margin: 10px;
 }
 
 .todo h3 {
@@ -142,20 +161,12 @@ header {
     margin-left: 10px;
     height: 30px;
     width: 40px;
-    cursor: pointer;
-    border: 2px solid black;
-    padding: .3rem .6rem;
 }
 
 .done {
-    background-color: #395169;
+    background-color: #102f5e;
     font-style: italic;
     color: white;
     text-decoration: line-through;
 }
 
-button:hover {
-    background-color: #395169;
-    color: white;
-    transition: .3s;
-}
