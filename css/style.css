@@ -29,7 +29,7 @@ body {
 header {
     text-align: center;
     margin: 20px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     border-bottom: 1px solid gray;
 }
 
@@ -69,4 +69,31 @@ header {
     height: 30px;
     width: 100px;
     margin-top: 20px;
+}
+
+#toolbar {
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+#search-input {
+    width: 250px;
+    height: 30px;
+}
+
+#erase-button {
+    width: 40px;
+    height: 30px;
+}
+
+#filter {
+    margin-left: 15px;
+}
+
+#filter-select {
+    text-align: center;
+    height: 30px;
+    width: 110px;
 }
