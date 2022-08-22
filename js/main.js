@@ -26,6 +26,11 @@ const saveTodo = (text) => {
     const editBtn = document.createElement("button");
     editBtn.innerHTML = '<i class="fa-solid fa-pen"></i>';
     todo.appendChild("editBtn");
+
+    //Criando o Botão Remove e colocando botão dentro da variável todo 
+    const removeBtn = document.createElement("button");
+    removeBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+    appendChild("removeBtn");
 }
 
 
