@@ -36,8 +36,10 @@ header {
 #todo-form {
     display: inline-block;
     font-size: 20px;
+    padding-bottom: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
+    border-bottom: 1px solid gray;
 }
 
 #todo-input {
@@ -57,6 +59,8 @@ header {
     font-size: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
 }
 
 #edit-input {
@@ -75,7 +79,10 @@ header {
     display: flex;
     margin-left: 20px;
     margin-bottom: 20px;
+    padding-bottom: 20px;
     font-size: 20px;
+    border-bottom: 1px solid gray;
+    width: 90%;
 }
 
 #search-input {
@@ -95,5 +102,5 @@ header {
 #filter-select {
     text-align: center;
     height: 30px;
-    width: 110px;
+    width: 90px;
 }
