@@ -41,7 +41,7 @@ const saveTodo = (text) => {
     //Limpando input ao inserir tarefa na lista
     todoInput.value = "";
     todoInput.focus();
-}
+};
 
 // Eventos
 todoForm.addEventListener("submit", (e) => { //Criando evento submit
@@ -51,3 +51,14 @@ todoForm.addEventListener("submit", (e) => { //Criando evento submit
         saveTodo(inputValue); //Salvando os valores do input na Todo list
     }
 })
+
+document.addEventListener("click", (e) => {
+    const targetEl = e.target;
+    const parentEl = targetEl.closest("div");
+    if(targetEl.classList.contains("finish-todo")) {
+       parentEl.classList.toggle("done");
+    }
+    if(targetEl.classList.contains("remove-todo")) {
+        parentEl.remove();
+    }
+});
