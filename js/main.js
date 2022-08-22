@@ -13,29 +13,29 @@ const saveTodo = (text) => {
     todo.classList.add("todo");
 
     //Criando o título e colocando título dentro da variável Todo
-    const todoTittle = document.createElement("h3");
-    todoTittle.innerText = text;
-    todo.appendChild("todoTittle");
+    const todoTitle = document.createElement("h3");
+    todoTitle.innerText = text;
+    todo.appendChild(todoTitle);
 
     //Criando o Botão Concluído e colocando botão dentro da variável todo
     const doneBtn = document.createElement("button");
     doneBtn.classList.add("finish-todo");
-    doneBtn.innerHtml = '<i class="fa-solid fa-check"></i>';
-    todo.appendChild("doneBtn");
+    doneBtn.innerHTML = '<i class="fa-solid fa-check"></i>'
+    todo.appendChild(doneBtn);
 
     //Criando o Botão Editar e colocando botão dentro da variável todo
     const editBtn = document.createElement("button");
     editBtn.classList.add("edit-todo");
     editBtn.innerHTML = '<i class="fa-solid fa-pen"></i>';
-    todo.appendChild("editBtn");
+    todo.appendChild(editBtn);
 
     //Criando o Botão Remove e colocando botão dentro da variável todo 
     const deleteBtn = document.createElement("button");
     deleteBtn.classList.add("remove-todo");
     deleteBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
-    appendChild("deleteBtn");
+    todo.appendChild(deleteBtn);
 
-    todoList.appendChild("todo");
+    todoList.appendChild(todo);
 }
 
 
