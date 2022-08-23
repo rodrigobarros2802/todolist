@@ -11,13 +11,7 @@
 body {
     background-image: url(/img/fundo-rio.jpg);
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 button {
@@ -53,7 +47,7 @@ input, select {
     padding: 5px;
 }
 
-.hide {
+.esconde {
     display: none;
 }
  
@@ -72,8 +66,14 @@ input, select {
     border-bottom: 1px solid #ddd;
 }
 
-#todo-form, #edit-form {
-    display: inline-block;
+#todo-form {
+    font-size: 20px;
+    padding: 1rem;
+    margin-top: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+#edit-form {
     font-size: 20px;
     padding: 1rem;
     margin-top: 20px;
