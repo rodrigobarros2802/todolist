@@ -5,6 +5,7 @@ const editForm = document.querySelector("#edit-form");
 const editInput = document.querySelector("#edit-input");
 const cancelBtn = document.querySelector("#cancel-edit-btn");
 const todoList = document.querySelector("#todo-list");
+
 let oldInputValue;
 
 // Funções
@@ -54,12 +55,11 @@ const updateTodo = (text) => {
     const todos = document.querySelectorAll(".todo");
     todos.forEach((todo) => {
         let todoTitle = todo.querySelector("h3");
-        console.log(todoTitle, text);
         if(todoTitle.innerText === oldInputValue) {
             todoTitle.innerText = text;
         }
     })
-}
+};
 
 // Eventos
 todoForm.addEventListener("submit", (e) => { //Criando evento submit
@@ -76,7 +76,7 @@ document.addEventListener("click", (e) => {
     let todoTitle;
 
     if(parentEl && parentEl.querySelector("h3")) {
-        todoTitle = parentEl.querySelector("h3").innerText;
+        todoTitle = parentEl.querySelector("h3").innerText || "";
     }
 
     if(targetEl.classList.contains("finish-todo")) {
@@ -98,7 +98,7 @@ cancelBtn.addEventListener("click", (e) => {
 })
 
  editForm.addEventListener("submit", (e) => {
-    e.preventDefault;
+    e.preventDefault();
     const editInputValue = editInput.value;
     if(editInputValue) {
         updateTodo(editInputValue);
